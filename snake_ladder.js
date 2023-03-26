@@ -1,14 +1,13 @@
  let poss = 0
  winning_poss = 100
+ count = 0
 
  console.log("pl_1 is at start", poss)
  const noplay = 0,
      ladder = 1,
      snake = 2
-
-
-
  while (poss < winning_poss) {
+     count++
      let dice = Math.floor(Math.random() * (6 - 1 + 1) + 1)
      console.log("dice", dice)
 
@@ -28,4 +27,7 @@
          console.log("poss", poss)
      }
 
+
+
  }
+ console.log("count", count)
