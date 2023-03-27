@@ -17,10 +17,10 @@
          }
      }
      if (option == snake) {
-         if (active_player == true && poss_ply1 + dice <= winning_poss) {
+         if (active_player == true && poss_ply1 - dice > 0) {
              poss_ply1 = poss_ply1 - dice
          }
-         if (active_player == false && poss_ply2 + dice <= winning_poss) {
+         if (active_player == false && poss_ply2 - dice > 0) {
              poss_ply2 = poss_ply2 - dice
          }
          active_player = !active_player
